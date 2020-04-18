@@ -1,6 +1,7 @@
 import React from "react";
 import Aux from "../../../hoc/Aux";
 import Button from "../../UI/Button/Button";
+import classes from "./OrderSummary.module.css";
 
 const orderSummary = (props) => {
   const igSummary = Object.keys(props.ingredients).map((key) => {
@@ -21,7 +22,7 @@ const orderSummary = (props) => {
         <strong>Price Total : {props.price.toFixed(2)}</strong>
       </p>
       <p>continue to check out?</p>
-      <div>
+      <div className={classes.OrderSummary}>
         <Button btnType={"Success"} clicked={props.continueClicked}>
           Continue
         </Button>

@@ -1,0 +1,5 @@
+.OrderSummary {
+  flex: auto;
+  flex-direction: row;
+  text-align: center;
+}
